@@ -17,7 +17,6 @@ body {
   color: black;
   text-align: center;
   padding: 12px;
-  margin-top: 20px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
@@ -27,7 +26,6 @@ body {
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header .title {
-  font-size: 100px;
   font-weight: bold;
   text-shadow: 1px 1px 20px black, 0 0 150px yellow, 0 0 50px darkorange;
   color: white;
@@ -76,6 +74,8 @@ body {
   width: 100px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logoText {
 }
 .title {
   float: left;
