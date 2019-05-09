@@ -3,21 +3,30 @@
     <head>
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <link rel="stylesheet" type="text/css" href="japonifyStyle.css">
+      <title>Japonify Redirect</title>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function (){
+                if (navigator.userAgent.toLowerCase().indexOf("android") > -1){
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.y42app.japonify';
+                }
+                var isIpad = navigator.userAgent.match(/iPad/i) != null;
+                var isIphone = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+                if (isIpad || isIphone){
+                    window.location.href = 'https://itunes.apple.com/app/japonify/id1461102040';
+                }
+            });
+        </script>
+        <link rel="stylesheet" type="text/css" href="japonifyStyle.css">
     </head>
     <body>
-      <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-
-      <script>
-          $(document).ready(function (){
-              if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
-                  window.location.href = 'https://play.google.com/store/apps/details?id=com.y42app.japonify';
-              }
-              if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
-                  window.location.href = 'https://itunes.apple.com/app/japonify/id1461102040';
-              }
-          });
-      </script>
+      <div class='download'>
+        <a href='https://play.google.com/store/apps/details?id=com.y42app.japonify'>
+          <img class='playstore' src="img/google-play-badge.svg" />
+        </a>
+        <a href='https://itunes.apple.com/app/japonify/id1461102040'>
+          <img class='appstore' src="img/app-store-badge.svg" />
+        </a>
+      </div>
     </body>
   </html>
