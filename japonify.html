@@ -8,12 +8,12 @@
         <script>
             $(document).ready(function (){
                 if (navigator.userAgent.toLowerCase().indexOf("android") > -1){
-                    window.location.href = 'https://play.google.com/store/apps/details?id=com.y42app.japonify';
+                    location.replace('https://play.google.com/store/apps/details?id=com.y42app.japonify');
                 }
                 var isIpad = navigator.userAgent.match(/iPad/i) != null;
                 var isIphone = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
                 if (isIpad || isIphone){
-                    window.location.href = 'https://itunes.apple.com/app/japonify/id1461102040';
+                    location.replace('https://itunes.apple.com/app/japonify/id1461102040');
                 }
             });
         </script>
